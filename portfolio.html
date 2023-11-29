@@ -1,0 +1,699 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caudex:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caudex:wght@400;700&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/portfolio_responsive.css">
+
+    <!-- Script File -->
+    <script src="js/java_script.js"></script>
+    <title>Prajit</title>
+</head>
+
+<body>
+
+    <!-- PROGRESS ICON STARTS HERE -->
+    <div class="progress-wrap">
+        <i class="bi bi-arrow-up"></i>
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+    <!-- PROGRESS ICON ENDS HERE -->
+
+    <!-- NAVBAR STARTS HERE -->
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container-fluid">
+            <img class="logo" src="Images/logo.svg" alt="">
+            <button class="navbar-toggler" id="navbar-toggler" aria-label="Toggle navigation">
+                <i class="hamburger bi bi-list"></i>
+                <span class="cross bi bi-x" style="display: none;"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu-items" id="menu">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-target="home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#" data-target="about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-target="resume">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link selected active" href="#" data-target="portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-target="contact">Contact</a>
+                    </li>
+                </ul>
+
+                <label class="switch" for="toggleSwitch">
+                    <input type="checkbox" id="toggleSwitch">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+    </nav>
+    <!-- NAVBAR ENDS HERE -->
+
+    <!-- HERO SECTION STARTS HERE -->
+    <div class="container-for-hero-section-in-portfolio-page reveal-curve-left d-flex flex-column justify-content-center">
+        <div class="container">
+            <p class="about-text bottom-to-top overflow-hidden">Portfolio</p>
+            <h1 class="a-bit-about-me-text bottom-to-top overflow-hidden">Some of my work</h1>
+
+        </div>
+    </div>
+    <!-- HERO SECTION ENDS HERE -->
+
+    <!-- PORTFOLIO STARTS HERE -->
+    <div class="parent-container-for-portfolio-section">
+            <div class="container d-flex flex-column align-items-center">
+                <div class="portfolio-items">
+                    <!-- Rounded tabs -->
+                    <ul id="myTab" role="tablist"
+                        class="nav-for-portfolio nav nav-tabs nav-pills text-center bottom-to-top overflow-hidden">
+    
+                        <li class="nav-item flex-sm-fill">
+                            <a id="all-tab" data-bs-toggle="tab" href="#all" role="tab" aria-controls="all"
+                                aria-selected="true"
+                                class="nav-link border-0 text-uppercase font-weight-bold active">All</a>
+                        </li>
+    
+                        <li class="nav-item flex-sm-fill">
+                            <a id="casestudy-tab" data-bs-toggle="tab" href="#casestudy" role="tab"
+                                aria-controls="casestudy" aria-selected="false"
+                                class="nav-link border-0 text-uppercase font-weight-bold">Case Study</a>
+                        </li>
+    
+                        <li class="nav-item flex-sm-fill">
+                            <a id="uidesign-tab" data-bs-toggle="tab" href="#uidesign" role="tab" aria-controls="uidesign"
+                                aria-selected="false" class="nav-link border-0 text-uppercase font-weight-bold">UI
+                                Design</a>
+                        </li>
+    
+                        <li class="nav-item flex-sm-fill">
+                            <a id="uidev-tab" data-bs-toggle="tab" href="#uidev" role="tab" aria-controls="uidev"
+                                aria-selected="false" class="nav-link border-0 text-uppercase font-weight-bold">UI Dev</a>
+                        </li>
+    
+                        <li class="nav-item flex-sm-fill">
+                            <a id="Branding-tab" data-bs-toggle="tab" href="#Branding" role="tab" aria-controls="Branding"
+                                aria-selected="false" class="nav-link border-0 text-uppercase font-weight-bold">Branding</a>
+                        </li>
+    
+    
+                    </ul>
+    
+                    <div id="myTabContent" class="tab-content ">
+    
+                        <div id="all" role="tabpanel" aria-labelledby="all-tab" class="tab-pane fade show active">
+                            <div class="row">
+    
+                                <div class="col-lg-4 portfolio-container reveal">
+                                    <a href="https://www.behance.net/gallery/161677243/UX-Case-Study-Thrend-Online-Thrift-App"
+                                        target="_blank" class="portfolio-content-details">
+                                        <div class="photo-wrapper">
+                                            <img id="portfolio-image" src="Images/Casestudybanner-min.png" alt="">
+                                        </div>
+    
+                                        <div class="text-container-for-portfolio-content">
+                                            <label class="portfolio-category-tag" for="">UX Case Study</label>
+                                            <div class="d-flex flex-row align-items-center">
+                                                <h4 class="portfolio-name pt-3 m-0">“Thrend” a case study on
+                                                    preloved clothes buying application.</h4>
+                                                <span class="button-in-portfolio" href="">
+                                                    <i class="bi bi-arrow-up-right"></i>
+                                                </span>
+                                            </div>
+    
+                                        </div>
+                                    </a>
+                                </div>
+    
+                                <div class="col-lg-4 portfolio-container reveal">
+                                    <a href="https://www.behance.net/gallery/161639515/IOS-UI-Design-Thrend-Online-Thrift-App"
+                                        target="_blank" class="portfolio-content-details">
+                                        <div class="photo-wrapper">
+                                            <img id="portfolio-image" src="Images/iosbanner-min.png" alt="">
+                                        </div>
+    
+                                        <div class="text-container-for-portfolio-content">
+                                            <label class="portfolio-category-tag" for="">IOS App UI Design</label>
+                                            <div class="d-flex flex-row align-items-center">
+                                                <h4 class="portfolio-name pt-3 m-0">“Thrend” a pre-loved clothes buying
+                                                    application.</h4>
+                                                <span class="button-in-portfolio" href="">
+                                                    <i class="bi bi-arrow-up-right"></i>
+                                                </span>
+                                            </div>
+    
+                                        </div>
+                                    </a>
+    
+    
+                                </div>
+    
+                                <div class="col-lg-4 portfolio-container reveal">
+                                    <a href="https://www.behance.net/gallery/161628375/Android-UI-Design-Thrend-Online-Thrift-App"
+                                        target="_blank" class="portfolio-content-details">
+                                        <div class="photo-wrapper">
+                                            <img id="portfolio-image" src="Images/androidbanner-min.png" alt="">
+                                        </div>
+    
+                                        <div class="text-container-for-portfolio-content">
+                                            <label class="portfolio-category-tag" for="">Android App UI Design</label>
+                                            <div class="d-flex flex-row align-items-center">
+                                                <h4 class="portfolio-name pt-3 m-0">“Thrend” a pre-loved clothes buying
+                                                    application.</h4>
+                                                <span class="button-in-portfolio" href="">
+                                                    <i class="bi bi-arrow-up-right"></i>
+                                                </span>
+                                            </div>
+    
+                                        </div>
+                                    </a>
+    
+    
+                                </div>
+    
+                                <div class="col-lg-4 portfolio-container reveal">
+                                    
+                                    <a href="https://www.behance.net/gallery/165500417/iOS-UI-Design-Reco-Online-Waste-Management-App" target="_blank" class="portfolio-content-details">
+                                        <div class="photo-wrapper">
+                                            <img id="portfolio-image" src="Images/rico-iosbanner-min.png" alt="">
+                                        </div>
+    
+                                        <div class="text-container-for-portfolio-content">
+                                            <label class="portfolio-category-tag" for="">IOS App UI Design</label>
+                                            <div class="d-flex flex-row align-items-center">
+                                                <h4 class="portfolio-name pt-3 m-0">“Reco” a waste management application
+                                                </h4>
+                                                <span class="button-in-portfolio" href="">
+                                                    <i class="bi bi-arrow-up-right"></i>
+                                                </span>
+                                            </div>
+    
+                                        </div>
+                                    </a>
+                                </div>
+    
+                                <div class="col-lg-4 portfolio-container reveal">
+                                    <a href="https://www.behance.net/gallery/161586543/Website-Design-Thrend-Online-Thrift-App"
+                                        class="portfolio-content-details" target="_blank">
+                                        <div class="photo-wrapper">
+                                            <img id="portfolio-image" src="Images/thrend-webui-min.png" alt="">
+                                        </div>
+    
+                                        <div class="text-container-for-portfolio-content">
+                                            <label class="portfolio-category-tag" for="">Web UI Design</label>
+                                            <div class="d-flex flex-row align-items-center">
+                                                <h4 class="portfolio-name pt-3 m-0">Marketing website design for "Thrend"
+                                                    application</h4>
+                                                <span class="button-in-portfolio" href="">
+                                                    <i class="bi bi-arrow-up-right"></i>
+                                                </span>
+                                            </div>
+    
+                                        </div>
+                                    </a>
+    
+    
+                                </div>
+    
+                                <div class="col-lg-4 portfolio-container reveal">
+                                    <a href="https://www.behance.net/gallery/163994003/Website-Design-Star-Salon-Salon-Website-Design"
+                                        class="portfolio-content-details" target="_blank">
+                                        <div class="photo-wrapper">
+                                            <img id="portfolio-image" src="Images/starsalon_webui-min.png" alt="">
+                                        </div>
+    
+                                        <div class="text-container-for-portfolio-content">
+                                            <label class="portfolio-category-tag" for="">Web UI Design</label>
+                                            <div class="d-flex flex-row align-items-center">
+                                                <h4 class="portfolio-name pt-3 m-0">Marketing website design for an "Unisex
+                                                    Salon"</h4>
+                                                <span class="button-in-portfolio" href="">
+                                                    <i class="bi bi-arrow-up-right"></i>
+                                                </span>
+                                            </div>
+    
+                                        </div>
+                                    </a>
+    
+    
+                                </div>
+    
+    
+                            </div>
+                        </div>
+    
+                        <div id="casestudy" role="tabpanel" aria-labelledby="casestudy-tab" class="tab-pane fade px-4 py-5">
+                            <div class="row">
+    
+                                <div class="col-lg-4 portfolio-container reveal">
+                                    <a href="https://www.behance.net/gallery/161677243/UX-Case-Study-Thrend-Online-Thrift-App"
+                                        target="_blank" class="portfolio-content-details">
+                                        <div class="photo-wrapper">
+                                            <img id="portfolio-image" src="Images/Casestudybanner-min.png" alt="">
+                                        </div>
+    
+                                        <div class="text-container-for-portfolio-content">
+                                            <label class="portfolio-category-tag" for="">UX Case Study</label>
+                                            <div class="d-flex flex-row align-items-center">
+                                                <h4 class="portfolio-name pt-3 m-0">“Thrend” a case study on
+                                                    preloved clothes buying application.</h4>
+                                                <span class="button-in-portfolio" href="">
+                                                    <i class="bi bi-arrow-up-right"></i>
+                                                </span>
+                                            </div>
+    
+                                        </div>
+                                    </a>
+                                </div>
+    
+                            </div>
+                        </div>
+    
+                        <div id="uidesign" role="tabpanel" aria-labelledby="uidesign-tab" class="tab-pane fade px-4 py-5">
+                            <div class="row">
+    
+                                <div class="col-lg-4 portfolio-container reveal">
+                                    <a href="https://www.behance.net/gallery/161639515/IOS-UI-Design-Thrend-Online-Thrift-App"
+                                        target="_blank" class="portfolio-content-details">
+                                        <div class="photo-wrapper">
+                                            <img id="portfolio-image" src="Images/iosbanner-min.png" alt="">
+                                        </div>
+    
+                                        <div class="text-container-for-portfolio-content">
+                                            <label class="portfolio-category-tag" for="">IOS App UI Design</label>
+                                            <div class="d-flex flex-row align-items-center">
+                                                <h4 class="portfolio-name pt-3 m-0">“Thrend” a pre-loved clothes buying
+                                                    application.</h4>
+                                                <span class="button-in-portfolio" href="">
+                                                    <i class="bi bi-arrow-up-right"></i>
+                                                </span>
+                                            </div>
+    
+                                        </div>
+                                    </a>
+    
+    
+                                </div>
+    
+                                <div class="col-lg-4 portfolio-container reveal">
+                                    <a href="https://www.behance.net/gallery/161628375/Android-UI-Design-Thrend-Online-Thrift-App"
+                                        target="_blank" class="portfolio-content-details">
+                                        <div class="photo-wrapper">
+                                            <img id="portfolio-image" src="Images/androidbanner-min.png" alt="">
+                                        </div>
+    
+                                        <div class="text-container-for-portfolio-content">
+                                            <label class="portfolio-category-tag" for="">Android App UI Design</label>
+                                            <div class="d-flex flex-row align-items-center">
+                                                <h4 class="portfolio-name pt-3 m-0">“Thrend” a pre-loved clothes buying
+                                                    application.</h4>
+                                                <span class="button-in-portfolio" href="">
+                                                    <i class="bi bi-arrow-up-right"></i>
+                                                </span>
+                                            </div>
+    
+                                        </div>
+                                    </a>
+    
+    
+                                </div>
+    
+                                <div class="col-lg-4 portfolio-container reveal">
+                                    <a href="https://www.behance.net/gallery/165500417/iOS-UI-Design-Reco-Online-Waste-Management-App"
+                                        target="_blank" class="portfolio-content-details">
+                                        <div class="photo-wrapper">
+                                            <img id="portfolio-image" src="Images/rico-iosbanner-min.png" alt="">
+                                        </div>
+    
+                                        <div class="text-container-for-portfolio-content">
+                                            <label class="portfolio-category-tag" for="">IOS App UI Design</label>
+                                            <div class="d-flex flex-row align-items-center">
+                                                <h4 class="portfolio-name pt-3 m-0">“Reco” a waste management application
+                                                </h4>
+                                                <span class="button-in-portfolio" href="">
+                                                    <i class="bi bi-arrow-up-right"></i>
+                                                </span>
+                                            </div>
+    
+                                        </div>
+                                    </a>
+                                </div>
+       
+                                <div class="col-lg-4 portfolio-container reveal">
+                                    <a href="https://www.behance.net/gallery/161586543/Website-Design-Thrend-Online-Thrift-App"
+                                        class="portfolio-content-details" target="_blank">
+                                        <div class="photo-wrapper">
+                                            <img id="portfolio-image" src="Images/thrend-webui-min.png" alt="">
+                                        </div>
+    
+                                        <div class="text-container-for-portfolio-content">
+                                            <label class="portfolio-category-tag" for="">Web UI Design</label>
+                                            <div class="d-flex flex-row align-items-center">
+                                                <h4 class="portfolio-name pt-3 m-0">Marketing website design for "Thrend"
+                                                    application</h4>
+                                                <span class="button-in-portfolio" href="">
+                                                    <i class="bi bi-arrow-up-right"></i>
+                                                </span>
+                                            </div>
+    
+                                        </div>
+                                    </a>
+    
+    
+                                </div>
+    
+                                <div class="col-lg-4 portfolio-container reveal">
+                                    <a href="https://www.behance.net/gallery/163994003/Website-Design-Star-Salon-Salon-Website-Design"
+                                        class="portfolio-content-details" target="_blank">
+                                        <div class="photo-wrapper">
+                                            <img id="portfolio-image" src="Images/starsalon_webui-min.png" alt="">
+                                        </div>
+    
+                                        <div class="text-container-for-portfolio-content">
+                                            <label class="portfolio-category-tag" for="">Web UI Design</label>
+                                            <div class="d-flex flex-row align-items-center">
+                                                <h4 class="portfolio-name pt-3 m-0">Marketing website design for an "Unisex
+                                                    Salon"</h4>
+                                                <span class="button-in-portfolio" href="">
+                                                    <i class="bi bi-arrow-up-right"></i>
+                                                </span>
+                                            </div>
+    
+                                        </div>
+                                    </a>
+    
+    
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div id="uidev" role="tabpanel" aria-labelledby="uidev-tab" class="tab-pane fade px-4 py-5">
+                            <div class="row">
+    
+                                <div class="col-lg-4 portfolio-container reveal">
+                                    <a href="https://www.behance.net/gallery/161677243/UX-Case-Study-Thrend-Online-Thrift-App"
+                                        target="_blank" class="portfolio-content-details">
+                                        <div class="photo-wrapper">
+                                            <img id="portfolio-image" src="Images/Casestudybanner-min.png" alt="">
+                                        </div>
+    
+                                        <div class="text-container-for-portfolio-content">
+                                            <label class="portfolio-category-tag" for="">UX Case Study</label>
+                                            <div class="d-flex flex-row align-items-center">
+                                                <h4 class="portfolio-name pt-3 m-0">“Thrend” a case study on
+                                                    preloved clothes buying application.</h4>
+                                                <span class="button-in-portfolio" href="">
+                                                    <i class="bi bi-arrow-up-right"></i>
+                                                </span>
+                                            </div>
+    
+                                        </div>
+                                    </a>
+                                </div>
+    
+                            </div>
+                        </div>
+    
+                        <div id="Branding" role="tabpanel" aria-labelledby="Branding-tab" class="tab-pane fade px-4 py-5">
+                            <div class="row">
+    
+                                <div class="col-lg-4 portfolio-container reveal">
+                                    <a href="https://www.behance.net/gallery/161677243/UX-Case-Study-Thrend-Online-Thrift-App"
+                                        target="_blank" class="portfolio-content-details">
+                                        <div class="photo-wrapper">
+                                            <img id="portfolio-image" src="Images/Casestudybanner-min.png" alt="">
+                                        </div>
+    
+                                        <div class="text-container-for-portfolio-content">
+                                            <label class="portfolio-category-tag" for="">UX Case Study</label>
+                                            <div class="d-flex flex-row align-items-center">
+                                                <h4 class="portfolio-name pt-3 m-0">“Thrend” a case study on
+                                                    preloved clothes buying application.</h4>
+                                                <span class="button-in-portfolio" href="">
+                                                    <i class="bi bi-arrow-up-right"></i>
+                                                </span>
+                                            </div>
+    
+                                        </div>
+                                    </a>
+                                </div>
+    
+                            </div>
+                        </div>
+    
+                    </div>
+                    <!-- End rounded tabs -->
+                </div>
+            </div>
+    </div>
+    <!-- PORTFOLIO ENDS HERE -->
+
+
+
+    <!-- FOOTER STARTS HERE -->
+    <div class="parent-container-for-footer">
+        <div class="container">
+            <h3 class="follow-me-text">Follow me on</h3>
+            <div class="d-flex flex-row align-items-center justify-content-center mt-2 overflow-hidden">
+                <a href="https://www.instagram.com/iam_prajit/" class="social-icon reveal" target="_blank"><i
+                        class="bi bi-instagram"></i></a>
+                <a href="https://www.behance.net/pradas3" class="social-icon reveal" target="_blank"><i
+                        class="bi bi-behance"></i></a>
+                <a href="https://dribbble.com/PrajitO1" class="social-icon reveal" target="_blank"><i
+                        class="bi bi-dribbble"></i></a>
+                <a href="https://www.linkedin.com/in/prajit-das-1b75881a2/" class="social-icon reveal" target="_blank"><i
+                        class="bi bi-linkedin"></i></a>
+            </div>
+            <p class="copyright-text mt-3">Copyright © 2023. All right reserved.</p>
+        </div>
+    </div>
+    <!-- FOOTER ENDS HERE -->
+
+    <!-- SCROLL TO TOP STARTS HERE -->
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <script>
+        (function ($) {
+            "use strict";
+
+            $(document).ready(function () {
+                "use strict";
+
+                //Scroll back to top
+
+                var progressPath = document.querySelector('.progress-wrap path');
+                var pathLength = progressPath.getTotalLength();
+                progressPath.style.transition = progressPath.style.WebkitTransition = 'none';
+                progressPath.style.strokeDasharray = pathLength + ' ' + pathLength;
+                progressPath.style.strokeDashoffset = pathLength;
+                progressPath.getBoundingClientRect();
+                progressPath.style.transition = progressPath.style.WebkitTransition = 'stroke-dashoffset 10ms linear';
+                var updateProgress = function () {
+                    var scroll = $(window).scrollTop();
+                    var height = $(document).height() - $(window).height();
+                    var progress = pathLength - (scroll * pathLength / height);
+                    progressPath.style.strokeDashoffset = progress;
+                }
+                updateProgress();
+                $(window).scroll(updateProgress);
+                var offset = 50;
+                var duration = 550;
+                jQuery(window).on('scroll', function () {
+                    if (jQuery(this).scrollTop() > offset) {
+                        jQuery('.progress-wrap').addClass('active-progress');
+                    } else {
+                        jQuery('.progress-wrap').removeClass('active-progress');
+                    }
+                });
+                jQuery('.progress-wrap').on('click', function (event) {
+                    event.preventDefault();
+                    jQuery('html, body').animate({ scrollTop: 0 }, duration);
+                    return false;
+                })
+
+
+            });
+
+        })(jQuery);
+    </script>
+    <!-- SCROLL TO TOP ENDS HERE -->
+
+    <script>
+        let imageIndex = 0; // Initialize the index of the current image
+const images = [
+    "Images/about_section_image.png",
+    "Images/IMG_20220315_121437.jpg",
+];
+
+function changeImage() {
+    const imgElement = document.querySelector('.gallery-img');
+    imgElement.src = images[imageIndex];
+    imageIndex++;
+    if (imageIndex >= images.length) {
+        imageIndex = 0;
+    }
+}
+setInterval(changeImage, 4000);
+    </script>
+
+    <!-- NAV SAHDOW STARTS HERE -->
+    <script>
+    window.addEventListener('scroll', function() {
+        const navbar = document.getElementById('navbar');
+        if (window.scrollY > 0) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+    
+    </script>
+
+    <!-- NAV SAHDOW ENDS HERE -->
+
+    <!-- NAVBAR TOOGLE  STARTS HERE-->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const navbarToggler = document.getElementById('navbar-toggler');
+            const navbarCollapse = document.getElementById('navbarSupportedContent');
+            const hamburgerIcon = navbarToggler.querySelector('.hamburger');
+            const crossIcon = navbarToggler.querySelector('.cross');
+        
+            navbarToggler.addEventListener('click', function() {
+                navbarCollapse.classList.toggle('show');
+                hamburgerIcon.style.display = hamburgerIcon.style.display === 'none' ? 'inline' : 'none';
+                crossIcon.style.display = crossIcon.style.display === 'none' ? 'inline' : 'none';
+            });
+        });
+        
+    </script>
+    <!-- NAVBAR TOOGLE  ENDS HERE-->
+
+    <!-- REVEAL EFFECT STARTS HERE -->
+    <script>
+        var rafId = null;
+        var delay = 200;
+        var lTime = 0;
+
+        function scroll() {
+        var scrollTop = $(window).scrollTop();
+        var height = $(window).height()
+        var visibleTop = scrollTop + height;
+        $('.reveal').each(function() {
+            var $t = $(this);
+            if ($t.hasClass('reveal_visible')) { return; }
+            var top = $t.offset().top;
+            if (top <= visibleTop) {
+            if (top + $t.height() < scrollTop) {
+                $t.removeClass('reveal_pending').addClass('reveal_visible');
+            } else {
+                $t.addClass('reveal_pending');
+                if (!rafId) requestAnimationFrame(reveal);  
+            }
+            }
+        });
+        }
+        function reveal() {
+        rafId = null;
+        var now = performance.now();
+        
+        if (now - lTime > delay) {
+            lTime = now;
+            var $ts = $('.reveal_pending');
+            $($ts.get(0)).removeClass('reveal_pending').addClass('reveal_visible');  
+        }
+        
+        
+        if ($('.reveal_pending').length >= 1) rafId = requestAnimationFrame(reveal);
+        }
+
+        $(scroll);
+        $(window).scroll(scroll);
+    </script>
+    <!-- REVEAL EFFECT ENDS HERE -->
+
+    <!-- LEFT TO RIGHT ANIMATION STARTS HERE -->
+    <script>
+        function revealOnScroll() {
+            const elements = document.querySelectorAll('.bottom-to-top');
+            elements.forEach((element) => {
+                const elementTop = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                if (elementTop < windowHeight) {
+                    element.classList.add('bottom-to-top-visible');
+                }
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', revealOnScroll);
+        window.addEventListener('scroll', revealOnScroll);
+
+    </script>
+
+    <!-- LEFT TO RIGHT ANIMATION ENDS HERE -->
+
+    
+    <!-- IMAGE OPEN STARTS HERE -->
+
+    <script>
+        function revealOnScroll() {
+  const elements = document.querySelectorAll('.reveal-curve-left');
+  elements.forEach((element) => {
+    const elementTop = element.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+    if (elementTop < windowHeight) {
+      element.classList.add('reveal-curve-left-visible');
+    }
+  });
+}
+
+document.addEventListener('DOMContentLoaded', revealOnScroll);
+window.addEventListener('scroll', revealOnScroll);
+
+    </script>
+
+    <!-- IMAGE OPEN STARTS HERE -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Initialize Bootstrap tabs
+        var myTab = new bootstrap.Tab(document.getElementById('home-tab'));
+        myTab.show();
+    </script>
+</body>
+
+</html>

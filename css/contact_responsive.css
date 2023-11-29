@@ -1,0 +1,166 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  :root{
+      --text-primary-color:#F3F3F3;
+      --text-secondary-color:#B0B0B0;
+      --text-tertiary-color:#9F9F9F;
+  
+      --main-color:#00A3FF;
+  
+      --background-color-one:#06070D;
+      --background-color-two:#191b27;
+  
+      --button-color:linear-gradient(93deg, #00A3FF -50.5%, #0035BC 133.79%);
+      --font-family-one:'Caudex', serif;
+      --font-family-one:'Lato', sans-serif;
+  }
+  /* LARGE DEVICE SCREEN */
+  
+  @media (min-width: 1200px) {
+  
+  }
+  
+  
+  /* MEDIUM DEVICE SCREEN */
+  
+  @media (min-width: 768px) and (max-width: 1199px) {
+  
+  
+  
+  
+  
+  
+  }
+  
+  
+  
+  
+  /* SMALL DEVICE SCREEN */
+  
+  @media (max-width: 767px) {
+    
+  .container { 
+    padding-left:20px !important;
+    padding-right: 20px !important;}
+
+  .navbar-collapse {
+    height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out; 
+}
+
+.navbar-collapse.show {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+/* .navbar {
+  padding-top: 12px;
+  padding-bottom: 12px;
+} */
+.navbar-nav {
+  flex-direction: column;
+  align-items:center;
+}
+
+.navbar-nav .nav-item .nav-link.selected::after{
+  display: none;
+  align-items: center;
+
+}
+
+.nav-item{
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.nav-item .nav-link{
+  font-size: 20px;
+}
+
+.progress-wrap{
+  right:20px;
+}
+
+.all-it-starts{
+  font-size: 32px;
+
+}
+
+.container-for-hero-section-in-contact-page{
+  height: 200px;
+  margin-bottom: 24px;
+  margin-top: 50px;
+  background-size: cover;
+}
+
+.image-container-in-about{
+  padding-right: 12px;
+}
+
+
+/* HERO SECTION */
+
+/* CONTACT SECTION STARTS HERE */
+.parent-container-for-contact-section{
+    margin-top: 32px;
+    border-radius: 16px;
+    padding-top: 24px !important;
+    padding-bottom: 24px !important; 
+
+  }
+  .container-for-number-and-email{
+    padding-left: 12px;
+  }
+  
+  .container-for-inputs{
+    padding-right: 12px;
+  }
+  
+  .contact-section-heading-text{
+    font-size: 32px;
+  }
+  
+  .have-a-plan{
+    font-size: 20px;
+  }
+  
+  .say-hello-text{
+    margin-top: 24px;
+    font-size: 20px;
+  }
+  
+  .send-message{
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .phone, .email {
+    font-size: 16px;
+  }
+  
+  .number, .email-id{
+    font-size: 16px;
+  
+  }
+  
+  
+  /* CONTACT SECTION ENDS HERE */
+  
+  /* FOOTER SECTION STARTS HERE */
+  .parent-container-for-footer{
+    margin-top: 32px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  
+  .follow-me-text{
+    font-size: 20px;
+  }
+  
+  /* FOOTER SECTION ENDS HERE */
+  
+  }

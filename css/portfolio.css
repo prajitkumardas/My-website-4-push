@@ -1,0 +1,331 @@
+:root{
+    --text-primary-color:#F3F3F3;
+    --text-secondary-color:#B0B0B0;
+    --text-tertiary-color:#9F9F9F;
+
+    --main-color:#00A3FF;
+
+    --background-color-one:#0C0E1A;
+    --background-color-two:#141622;
+
+    --button-color:linear-gradient(93deg, #00A3FF -50.5%, #0035BC 133.79%);
+    --font-family-one:'Caudex', serif;
+    --font-family-one:'Lato', sans-serif;
+}
+
+
+
+.container-for-hero-section-in-portfolio-page{
+    background-image: url('../Images/portfoliobanner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 60px;
+    width: 100%;
+    height: 400px;
+    
+
+}
+
+.about-text{
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    color: var(--text-secondary-color);
+    margin: 0;
+    padding-bottom: 16px;
+    position: relative;
+
+}
+
+.a-bit-about-me-text{
+    font-size: 48px;
+    font-family: 'Caudex', serif;
+    margin: 0;
+    font-weight: normal;
+    color: var(--text-primary-color);
+
+}
+
+/* PORTFOLIO SECTION STARTS HERE */
+.parent-container-for-portfolio-section{
+    margin-top: 60px;
+
+}
+
+.portfolio-section-heading-text{
+    font-family: 'Caudex', serif;
+    color: var(--text-primary-color);
+    font-size: 40px;
+    font-weight: normal;
+    margin: 0;
+    padding-bottom: 16px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.portfolio-section-heading-text::after {
+  content: "";
+  display: block;
+  width: 50px; 
+  height: 2px;
+  background: var(--color-primery, #00A3FF);
+  margin-top: 8px;
+}
+
+
+.portfolio-section-para-text{
+    font-size: 16px;
+    color: var(--text-secondary-color);
+    font-weight: 200;
+    font-family: 'Lato', sans-serif;
+    padding-bottom: 24px;
+    margin: 0;
+    text-align: center;
+
+}
+
+.portfolio-items{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nav-for-portfolio{
+border-radius: 60px;
+background: var(--background-color-one);
+padding: 8px 12px;
+width: 40%;
+position: sticky;
+top: 70px;
+backdrop-filter: blur(20.5px);
+z-index: 2;
+border-width:2px;
+border: 1px solid ;
+border: 1px solid rgb(255, 255, 255,15%);
+box-shadow: inset 0px 0px 4px 2px rgba(168, 128, 255, 0.1);
+
+
+}
+
+.nav-for-portfolio .nav-item .nav-link{
+  color: var(--text-tertiary, #9F9F9F);
+  font-family: 'Lato', sans-serif;
+font-size: 14px;
+font-style: normal;
+padding: 8px 12px;
+text-transform: none !important;
+}
+
+.nav-for-portfolio .nav-item .nav-link:hover{
+ color: var(--text-primary-color);
+}
+
+.nav-for-portfolio .nav-item .nav-link.active{
+background-color:rgb(255, 255, 255,0.2);
+color: white;
+border-radius: 50px;
+box-shadow: inset 0px 0px 4px 2px rgba(168, 128, 255, 0.1);
+}
+
+.container-for-portfolio-content{
+  border-radius: 16px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  overflow: hidden;
+  border-radius: 16px;
+  background-color: var(--background-color-two) !important;
+
+}
+
+#casestudy, #uidesign, #uidev, #Branding{
+  padding: 0 !important;
+}
+
+.portfolio-container{
+  margin-top: 24px;
+}
+
+.portfolio-content-details {
+    background-color:var(--background-color-two);
+    display: block;
+    border-radius: 16px;
+    text-decoration: none;
+    overflow: hidden;
+    color: #000;
+}
+
+.portfolio-content-details:hover {
+
+  background: linear-gradient(66deg,  #171B22 13.95%, #4B4F56 72.33%, #4B4F56 72.33%);
+
+}
+
+.photo-wrapper img {
+    width: 100%;
+    height: auto;
+
+}
+
+.text-container-for-portfolio-content {
+    padding: 10px;
+}
+
+.portfolio-name {
+    margin: 0;
+}
+
+
+
+.container-for-portfolio-content:hover{
+  background: linear-gradient(93deg, #171b22 -1.28%, #2d3036 99.56%, #21252C 99.56%);
+}
+
+.portfolio-content{
+
+}
+
+.photo-wrapper{
+  overflow: hidden;
+}
+
+#portfolio-image{
+  width: 100%; 
+  height: auto;
+  transition: 1s;
+}
+.portfolio-content-details:hover #portfolio-image{
+  transform: scale(1.1);
+}
+
+.text-container-for-portfolio-content{
+  padding: 16px 16px;
+}
+
+.portfolio-category-tag{
+  color: var(--text-secondary-color);
+  font-size: 14px;
+  font-weight: normal;
+  font-family: 'Lato', sans-serif;
+  padding: 4px 8px;
+  border-radius: 8px;
+background: rgba(255, 255, 255, 0.06);
+
+}
+
+.portfolio-name{
+  font-size: 24px;
+  font-family: 'Caudex', serif;
+  color: var(--text-primary-color);
+  font-weight: normal;
+  padding-right: 8px;
+
+}
+.button-in-portfolio {
+  position: relative;
+  border-radius: 41px;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 15px 20px;
+  transition: transform 0.3s ease-out;
+}
+
+.button-in-portfolio i {
+  position: relative; 
+  font-size: 20px;
+  color: var(--text-primary-color);
+  font-weight: bold;
+  z-index: 1;
+}
+
+.button-in-portfolio::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: transparent;
+  transition: height 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  border-radius: 100%;
+  z-index: 0; /* Ensure the ::before pseudo-element is behind the icon */
+}
+
+.portfolio-content-details:hover .button-in-portfolio::before {
+  height: 100%;
+  background: var(--color-button-2, linear-gradient(93deg, #00A3FF -50.5%, #0035BC 133.79%));
+}
+
+
+
+.more-this-way-button{
+  border-radius: 4px;
+  border: none;
+  background: var(--color-button-2, linear-gradient(93deg, #00A3FF -50.5%, #0035BC 133.79%));
+  color:var(--text-primary-color);
+  font-family:'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  padding: 8px 12px 8px 16px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  border: 1px solid rgb(0, 162, 255,0.1);
+  margin-top: 32px;
+  height: 44px;
+  text-transform: uppercase;
+}
+
+
+
+.download-resume-button-container{
+display: flex;
+justify-content: start;
+align-items: center;
+}
+.more-this-way-button i{
+margin-left: 8px;
+
+}
+
+.more-this-way-button:hover {
+color: white;
+background: transparent;
+background: rgba(0, 163, 255, 0.10);
+border: 1px solid rgb(0, 162, 255);
+
+
+}
+
+.more-this-way-button:before {
+content: "";
+position: absolute;
+top: 0;
+left: -100%;
+width: 100%;
+height: 100%;
+background: linear-gradient(
+  120deg,
+  transparent,
+  rgba(146, 148, 248, 0.4),
+  transparent
+);
+transition: all 650ms;
+}
+
+.more-this-way-button:hover:before {
+left: 100%;
+}
+
+
+.more-this-way-button i{
+  margin-left: 8px;
+  font-size: 20px;
+color: var(--text-primary-color);
+font-weight: bold;
+
+  
+}

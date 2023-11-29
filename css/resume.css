@@ -1,0 +1,387 @@
+:root{
+    --text-primary-color:#F3F3F3;
+    --text-secondary-color:#B0B0B0;
+    --text-tertiary-color:#9F9F9F;
+
+    --main-color:#00A3FF;
+
+    --background-color-one:#0C0E1A;
+    --background-color-two:#141622;
+
+    --button-color:linear-gradient(93deg, #00A3FF -50.5%, #0035BC 133.79%);
+    --font-family-one:'Caudex', serif;
+    --font-family-one:'Lato', sans-serif;
+}
+
+
+.container-for-hero-section-in-resume-page{
+    background-image: url('../Images/resemebanner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 60px;
+    width: 100%;
+    height: 400px;
+    margin-bottom: 60px;
+    
+
+}
+
+.about-text{
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    color: var(--text-secondary-color);
+    margin: 0;
+    padding-bottom: 16px;
+    position: relative;
+
+}
+
+.a-bit-about-me-text{
+    font-size: 48px;
+    font-family: 'Caudex', serif;
+    margin: 0;
+    font-weight: normal;
+    color: var(--text-primary-color);
+
+}
+.text-container-in-about{
+    padding-left: 24px;
+}
+
+/* WHAT I DO SECTION SRARTS HERE */
+
+.what-i-do-parent-container-for-text{
+    padding-right:24px;
+}
+
+.what-i-do-parent-container-for-service{
+    padding-left: 24px;
+}
+.sticky-container {
+    position: sticky;
+    top: 70px;
+}
+
+.what-i-do{
+    font-size: 40px;
+    font-family: 'Caudex', serif;
+    margin: 0;
+    font-weight: normal;
+    color: var(--text-primary-color);
+    padding-bottom: 16px;
+
+}
+
+.what-i-do::after{
+    content: "";
+    display: block;
+    width: 50px; 
+    height: 2px;
+    background: var(--color-primery, #00A3FF);
+    margin-top: 8px;
+}
+
+.what-i-do-para{
+    font-size: 16px;
+    font-weight: normal;
+    color: var(--text-secondary-color);
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    line-height: 24px;
+    padding-bottom: 24px;
+}
+
+.skill-name{
+    padding: 4px 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.06);
+    color: var(--text-secondary-color);
+    font-size: 14px;
+    display: inline-block;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    margin-top: 4px !important;
+    margin-bottom: 4px !important;
+    box-shadow: inset 0px 0px 4px 2px rgba(168, 128, 255, 0.1);
+}
+
+.icon-in-what-i-do{
+    height: 56px;
+    margin-right: 16px;
+}
+
+.ui-sedign-text{
+    font-size: 24px;
+    color: var(--text-primary-color);
+    margin: 0;
+    font-family: 'Caudex', serif;
+}
+
+.parent-container-for-what-i-do-card{
+    position: relative;
+margin-bottom: 16px;
+align-items: center;
+
+}
+
+.container-for-what-i-do-card{
+    background: linear-gradient(93deg, #262B35 -1.28%, #171B22 99.56%, #21252C 100%);
+padding: 16px;
+border-radius: 16px;
+position: relative;
+z-index: 1;
+transition: background-color 0.3s ease;
+}
+
+
+
+.background{
+    border-radius: 24px;
+    background: var(--color-button-2, linear-gradient(93deg, #00A3FF -50.5%, #0035BC 133.79%));
+    display: flex;
+    width: 100%;
+    height: 40px;
+    margin-top: -36px;
+}
+
+
+/* WHAT I DO SECTION ENDS HERE */
+/* EDUCATION AND EXPERIENCE STARTS HERE */
+.parent-container-for-education-and-experience{
+    background-color: var(--background-color-two);
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+.parent-container-for-education{
+    background-color: var(--background-color-one);
+    border-radius: 16px;
+    padding: 24px;
+
+
+}
+
+.education-icon-container, .office-icon-container{
+    background: var(--color-button-2, linear-gradient(93deg, #00A3FF -50.5%, #0035BC 133.79%));
+    color: var(--text-primary-color);
+   height: 48px;
+   width: 48px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 16px;
+}
+
+.education-icon-container i, .office-icon-container i{
+    font-size: 22px;
+}
+
+.education, .experience{
+    color: var(--text-primary-color);
+    font-size: 40px;
+    font-family: 'Caudex', serif;
+    margin: 0;
+    font-weight: normal;
+}
+
+.parent-container-for-experience{
+    background-color: var(--background-color-one);
+    border-radius: 16px;
+    padding: 24px;
+}
+.year{
+    font-size: 12px;
+    color: var(--text-tertiary-color);
+    padding: 4px 12px;
+    border-radius: 26px;
+    background: rgba(255, 255, 255, 0.05);
+    margin-bottom: 16px;
+    font-family: 'Lato', sans-serif;
+    box-shadow: inset 0px 0px 4px 2px rgba(168, 128, 255, 0.1);
+}
+
+.year-for-ex{
+    font-size: 12px;
+    color: var(--text-secondary-color);
+    padding: 4px 12px;
+    border-radius: 26px;
+    background-color: rgb(2, 125, 247, 10%);
+    margin-bottom: 16px;
+    font-family: 'Lato', sans-serif;
+    box-shadow: inset 0px 0px 4px 2px rgba(168, 128, 255, 0.1);
+}
+
+.degree-name{
+   color: var(--text-primary-color);
+    font-size: 20px;
+    font-family: 'Caudex', serif;
+    margin: 0;
+    font-weight: normal;
+    padding-bottom: 8px;
+}
+
+.institution-name{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: var(--text-secondary-color);
+    padding-bottom: 8px;
+    font-weight: normal;
+    margin: 0;
+
+}
+
+.place{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: var(--text-secondary-color);
+    padding-bottom: 8px;
+    font-weight: normal;
+    margin: 0;
+
+}
+
+.separate-education-container{
+    margin-top: 24px;
+}
+
+
+/* EDUCATION AND EXPERIENCE ENDS HERE */
+
+/* SKILLS SECTION STARTS HERE */
+.skills{
+    color: var(--text-primary-color);
+    font-size: 40px;
+    font-family: 'Caudex', serif;
+    margin: 0;
+    font-weight: normal;
+    padding-bottom: 16px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.skills::after {
+    content: "";
+    display: block;
+    width: 50px; 
+    height: 2px;
+    background: var(--color-primery, #00A3FF);
+    margin-top: 8px;
+  }
+  
+
+/* SKILLS SECTION ENDS HERE */
+
+
+.imgContainer {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+   background: linear-gradient(180deg, rgba(18, 83, 157, 0.10) 0.22%, rgba(0, 27, 58, 0.00) 99.78%);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.bottle {
+  position: absolute;
+  left: 50%;
+  top: 35px;
+  height: 64px;
+  width: 64px;
+  transform: rotate(25deg);
+  -webkit-animation: floating 1.75s ease-in-out infinite alternate;
+          animation: floating 1.75s ease-in-out infinite alternate;
+}
+.imgContainer img.wave {
+  -webkit-animation: wave 2.3s linear infinite;
+          animation: wave 2.3s linear infinite;
+  -webkit-animation-delay: -0.2s;
+          animation-delay: -0.2s;
+  position: absolute;
+  bottom: 0;
+  width: 200%;
+}
+.imgContainer img.wave.delay {
+  -webkit-animation-duration: 3.5s;
+          animation-duration: 3.5s;
+}
+
+@-webkit-keyframes wave {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes wave {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+@-webkit-keyframes floating {
+  from {
+    transform: translate(-50%, 10px);
+  }
+  to {
+    transform: translate(-50%, -10px);
+  }
+}
+@keyframes floating {
+  from {
+    transform: translate(-50%, 10px);
+  }
+  to {
+    transform: translate(-50%, -10px);
+  }
+}
+
+.skills-name{
+  font-size: 20px;
+  font-weight: normal;
+  color: var(--text-primary-color);
+  margin: 0;
+  padding-top: 8px;
+  font-family: 'Caudex', serif;
+}
+
+.percentage-value{
+  color: var(--text-secondary-color);
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding-top: 8px;
+
+
+
+}
+
+
+
+
+

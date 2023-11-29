@@ -1,0 +1,354 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root{
+    --text-primary-color:#F3F3F3;
+    --text-secondary-color:#B0B0B0;
+    --text-tertiary-color:#9F9F9F;
+
+    --main-color:#00A3FF;
+
+    --background-color-one:#06070D;
+    --background-color-two:#191b27;
+
+    --button-color:linear-gradient(93deg, #00A3FF -50.5%, #0035BC 133.79%);
+    --font-family-one:'Caudex', serif;
+    --font-family-one:'Lato', sans-serif;
+}
+/* LARGE DEVICE SCREEN */
+
+@media (min-width: 1200px) {
+
+}
+
+
+/* MEDIUM DEVICE SCREEN */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+
+
+
+
+
+}
+
+
+
+
+/* SMALL DEVICE SCREEN */
+
+@media (max-width: 767px) {
+
+
+  .container { 
+    padding-left:20px !important;
+    padding-right: 20px !important;}
+
+  .navbar-collapse {
+    height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out; 
+}
+
+.navbar-collapse.show {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+/* .navbar {
+  padding-top: 12px;
+  padding-bottom: 12px;
+} */
+.navbar-nav {
+  flex-direction: column;
+  align-items:center;
+}
+
+.navbar-nav .nav-item .nav-link.selected::after{
+  display: none;
+  align-items: center;
+
+}
+
+.nav-item{
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.nav-item .nav-link{
+  font-size: 20px;
+}
+
+.progress-wrap{
+  right:20px;
+}
+
+/* HERO SECTION STARTS HERE */
+.wave-text{
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.hero-text{
+  font-size: 32px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.container-for-hero-section{
+  align-items: center;
+}
+
+.hero-image-wrapper{
+  margin-top: 32px;
+  margin-bottom: 32px;
+  height: 290px;
+  width: 290px;
+
+
+}
+
+.hero-image-cover{
+  height: 290px;
+  width: 290px;
+}
+
+.background-circle{
+  height:150px;
+  width: 300px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-28%, -24%) rotate(120deg);
+  border-radius: 300px 300px 0 0;
+
+}
+
+.icon2{
+  top: 77%;
+  right:13px;
+}
+
+.icon1{
+  left: -16px;
+}
+
+.parent-container-for-hero-section{
+  background: radial-gradient(ellipse at bottom, #081A34 0%, #0C0E1A 50%);
+}
+
+
+
+
+
+
+/* HERO SECTION ENDS HERE */
+
+
+
+/* ABOUT SECTION STARTS HERE */
+.parent-container-for-about-section{
+  margin-bottom: 32px;
+
+}
+.container-for-text-in-about-section{
+  margin-top: 32px;
+  margin-bottom: 0px;
+}
+
+.about-section-heading{
+  font-size: 32px;
+}
+
+.about-section-paragraph-text{
+  width: 100%;
+  font-weight:normal;
+}
+
+
+.download-resume-button-container{
+  width: 100%;
+}
+
+
+.download-resume-button{
+  display: flex;
+    width: 100%;
+    justify-content: center;
+
+}
+
+/* ABOUT SECTION ENDS HERE */
+
+/* EXPERTIES SECTION STARTS HERE */
+.parent-container-for-expertise-section{
+  padding-top: 32px;
+  padding-bottom: 8px;
+}
+
+.expertise-section-heading-text{
+  font-size: 32px;
+}
+
+.expertise-section-para-text{
+  font-weight: normal;
+}
+
+.service {
+  margin-bottom: 24px;
+
+}
+
+.service-content{
+  padding: 44px 24px; 
+}
+
+.service-title{
+  margin-bottom: 16px;
+}
+
+
+.learn-more-link{
+  color: var(--text-secondary-color) !important;
+}
+
+.modal-content {
+  max-height: 400px;
+}
+
+
+
+
+
+
+/* EXPERTIES SECTION ENDS HERE */
+
+/* PORTFOLIO SECTION STARTS HERE */
+.parent-container-for-portfolio-section{
+  margin-top: 32px;
+}
+
+.portfolio-section-heading-text {
+  font-size: 32px;
+}
+
+.portfolio-section-para-text {
+  font-weight: normal;
+
+}
+.portfolio-section-para-text{
+  padding-bottom: 8px;
+}
+
+.more-this-way-button{
+  width: 100%;
+  justify-content: center;
+}
+
+.portfolio-content-details{
+
+  background: linear-gradient(66deg,  #171B22 13.95%, #4B4F56 72.33%, #4B4F56 72.33%);
+
+}
+
+ .button-in-portfolio::before {
+  height: 100%;
+  background: var(--color-button-2, linear-gradient(93deg, #00A3FF -50.5%, #0035BC 133.79%));
+}
+
+.swiper{
+  padding: 0 !important;
+  margin-top: 16px !important;
+}
+
+
+/* PORTFOLIO SECTION ENDS HERE */
+
+
+
+/* CONTACT SECTION STARTS HERE */
+.parent-container-for-contact-section{
+  margin-top: 32px;
+  border-radius: 16px;
+  padding-top: 24px !important;
+  padding-bottom: 24px !important; 
+}
+.container-for-number-and-email{
+  padding-left: 12px;
+}
+
+.container-for-inputs{
+  padding-right: 12px;
+}
+.contact-section-heading-text{
+  font-size: 32px;
+}
+
+.have-a-plan{
+  font-size: 20px;
+}
+
+.say-hello-text{
+  margin-top: 24px;
+  font-size: 20px;
+}
+
+.send-message{
+  width: 100%;
+  justify-content: center;
+}
+
+.phone, .email {
+  font-size: 16px;
+}
+
+.number, .email-id{
+  font-size: 16px;
+
+}
+
+
+/* CONTACT SECTION ENDS HERE */
+
+/* FOOTER SECTION STARTS HERE */
+.parent-container-for-footer{
+  margin-top: 32px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.follow-me-text{
+  font-size: 20px;
+}
+
+/* FOOTER SECTION ENDS HERE */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  }
+
+ 
+    
